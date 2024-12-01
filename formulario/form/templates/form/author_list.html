@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Author List</title>
+</head>
+<body>
+    <h1>Authors</h1>
+    <ul>
+        {% for author in authors %}
+        <li>{{ author.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'author_create' %}">Add new author</a>
+</body>
+</html>
